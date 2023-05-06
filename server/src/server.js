@@ -1,13 +1,16 @@
 const express = require('express');
+var cors = require('cors');
+
 const app = express();
 const mongoose = require('mongoose');
 const userRouter = require('./Router/userRouter');
 const bodyParser = require('body-parser');
-var cors = require('cors');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(cors());
+app.use(cors({
+    origin: "*",
+}));
 
 
 main().catch(err => console.log(err));
