@@ -1,0 +1,110 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51em;
+    background-image: url("../images/backPic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    padding-bottom: 1vh;
+}
+.register{
+         width: 25%;
+         height: 25em;
+        overflow: hidden;
+        margin: auto;
+        padding: 5em;
+        background: #194a6a;
+        border-radius: 15px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+}
+#signH2{
+    text-align: center;
+    color: #f51761;
+    font-size: 56px;
+    margin-top: -3vh;
+    margin-bottom: 2vh;
+}
+
+.form__field >input{
+    width: 100%;
+    height: 3em;
+    border: none;
+    border-radius: 0em 1em 0px 1em;
+    padding-left: 8px;
+    margin-bottom: 1em;
+    box-shadow: 5px 8px #888888;
+}
+
+#signUp{
+    width: 9em;
+    height: 2em;
+    border: none;
+    border-radius: 12em;
+    background-color: #b6f615;
+    font-size: 18px;
+}
+#msg{
+    color: red;
+}
+
+.burger{
+    height: 49%;
+    position: relative;
+    animation: burgerGradient 4s ease infinite;
+}
+@keyframes burgerGradient {
+    0%   {left:0px; top:0px;}
+    50%  {left:250px; top:0px;}
+    100%  {left:0px; top:0px;}
+}
+
+.guestLog{
+    text-decoration: none;
+    color: rgb(244, 8, 146);
+    width: fit-content;
+}
+
+.guestLog:hover{
+    color: rgb(249, 101, 187);
+}
+
+@media screen and (max-width: 450px) {
+  
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 51em;
+        padding-bottom: 1vh;
+    }
+    .burger{
+        height: 20%;
+        position: relative;
+        animation: burgerGradient 4s ease infinite;
+    }
+    @keyframes burgerGradient {
+        0%   {left:0px; top:0px;}
+        50%  {left:100px; top:0px;}
+        100%  {left:0px; top:0px;}
+    }
+    .register{
+        width: 50%;
+       padding: 3em;
+     }
+     #signH2{
+     font-size: 32px;
+    }
+    .form__field input{
+     padding-left: 0px;
+    }
+}
