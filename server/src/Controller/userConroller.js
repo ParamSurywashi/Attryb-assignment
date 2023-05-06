@@ -10,7 +10,8 @@ exports.addUser = async (req,res)=>{
 
 exports.loginUser = async (req,res)=>{
     const user =  await User.findOne({email: req.body.email});
-
+    res.setHeader('Content-Type','application/json');
+    
     if(user){
         res.json({"success" : true, "username" : user.username});
         res.end();
