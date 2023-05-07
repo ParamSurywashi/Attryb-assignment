@@ -33,12 +33,12 @@ function LoginUser() {
           console.log(data);
           
          
-         if(data.validate){
+         if(data.success){
           setValue(data.username);
           setMessage("Successfully Login");
           document.getElementById("msg").style.color="green";
             setTimeout(()=>{
-              window.localStorage.setItem("yummyrecipeuser", data.username);
+              window.localStorage.setItem("caruser", data.username);
               navigate('/home', {state : { user : data.username}});
               // handleUser(data.username);
             },1500)
