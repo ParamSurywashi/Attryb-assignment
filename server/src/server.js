@@ -8,9 +8,7 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(cors({
-    origin: "*",
-}));
+app.use(cors());
 
 
 main().catch(err => console.log(err));
