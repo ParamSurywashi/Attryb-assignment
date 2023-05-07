@@ -27,7 +27,7 @@ function Header() {
  const [user, setUser] = useState("Guest");
 
  useEffect(()=>{
-  setUser(window.localStorage.getItem("yummyrecipeuser"));
+  setUser(window.localStorage.getItem("caruser"));
  },[])
  
   
