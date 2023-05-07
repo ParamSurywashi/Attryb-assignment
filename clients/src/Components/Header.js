@@ -47,7 +47,7 @@ function Header() {
         navigate("/" );
       }, 2000);
     }else{
-      navigate("/addrecipe");
+      navigate("/addcar");
     }
   }
   
