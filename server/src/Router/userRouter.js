@@ -4,6 +4,6 @@ const userController = require('../Controller/userConroller');
 
 
 router.post('/adduser', userController.addUser);
-router.get('/login', userController.loginUser);
+router.post('/login', userController.loginUser);
 
 exports.Router = router;
